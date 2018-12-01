@@ -1,0 +1,52 @@
+{
+  "name": "data-normalizr",
+  "version": "0.0.0",
+  "description": "An util to normalize your data array with your own models, thought to use in reactive states (Angular, React, Vue, etc.)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch",
+    "build": "babel src -x .ts -d build",
+    "build:watch": "babel src -x .ts -d build --watch",
+    "lint": "tslint -t stylish --project ."
+  },
+  "keywords": [
+    "normalize"
+  ],
+  "author": "Adrián Ferrera González (afergon)",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.1.0",
+    "@babel/preset-typescript": "^7.1.0",
+    "@types/jest": "^23.3.10",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.4.2",
+    "jest": "^23.6.0",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-microsoft-contrib": "^6.0.0",
+    "typescript": "^3.2.1"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "moduleDirectories": [
+      "./node_modules",
+      "./src"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(js|ts)$": "babel-jest"
+    },
+    "testMatch": [
+      "<rootDir>/__test__/**/*.(j|t)s?(x)",
+      "<rootDir>/src/**/?(*.)(spec|test).(j|t)s?(x)"
+    ],
+    "verbose": true
+  }
+}
