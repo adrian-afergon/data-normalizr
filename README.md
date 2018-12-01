@@ -1,4 +1,4 @@
-#data-normalizr
+# data-normalizr
 
 An util to normalize your data array with your own models, thought to use in reactive states (Angular, React, Vue, etc.)
 
